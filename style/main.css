@@ -1,0 +1,132 @@
+/*declara uma variavel no css vamos destra dentro do elemento :root*/
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*organiza a caixa como nada passar da borda e nada entra em outra caixa*/
+
+}
+/*elementos base*/
+body{
+    background-color: var(--preta);/*fundo da divi body*/
+    font-family: 'Arial', Times, serif; /*fonte do sate*/
+    color: white;
+}
+/*quando boto [ *] chama todo o html e bom fazer para fica adequadro para todos os navegadores*/
+
+header .container{
+    display: flex;/*alinha os elementos em tela na mesma linha*/
+    flex-direction: row;/*isso e uma propriedade de fool se eu nao declara ele vai vim do mesmo jeito*/
+    align-items: center;/*deixa os item centralizado*/
+    justify-content: space-between;
+
+}
+header .logo{
+    margin-left: 6px;/*mover para esqueda o logo netflixS*/
+    color: var(--vermelho);
+    font-family: 'arial black', times;/*formato da letra*/
+    font-size: 40px;/*tamanho da font*/
+
+}
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;/*margin a direita da espaço */
+}
+header nav a:hover{/*aqui e nosso ancora esse efeito faz quando o mause passar por cima do nosso link ele muda de cor*/
+    color: #fff;
+
+
+}
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;/*tamanho do texto da letra*/
+    /*linear-gradient me da uma camada fina de preto que me da um contraste melhor*/
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-house.jpg');/*pega a img */
+
+    height: 400px;/*altura da caixa*/
+    background-size: cover;/*especifica o tamanho da img e pega a area de corbertura da nossa caixa*/
+
+    display: flex;/*fica em linha*/
+    flex-direction: column;/*fica um debaixo do outro */
+    justify-content: center;/*deixa centralizado*/
+    align-items: flex-start;/*os item comecar sempre da esquerda*/
+  
+}
+.filme-principal .descricao{
+   margin-top: 10px;
+    margin-bottom: 60px;/*usamos a class descricao para morver o botao pra baixo*/
+
+
+
+}
+.filme-principal .titulo{
+    margin-top: 20%;/*empuro o titulo pra baixo*/
+    font-size: 40px;/*mudar o tamanho da letra */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.botao{
+    background-color: rgba(0,0,0,.50);/*os zero vem assim  rgba(vermelho,verde,azul)depois vem a camada alfa*/
+    border: none;/*tira a borda*/
+    color: white;/*fcor da letra*/
+
+    /*o primeiro valor sempre vai ser pracima e pra baixo o segundo valor vai ser direita e esquerda*/
+    padding: 15px 30px;/*quando passo o padding com um valor ele altera as quatro posicoes pra cima,pra baixo, para um lado, direita  e esquerda*/
+    margin-right: 15px;/*a distancia entre os botoes*/
+    font-size: 12px;/*formato da letra*/
+
+    cursor: pointer;/*passar o mause vai indentificar que e clicavel*/
+    transition:.5s ease all ;/*cuida da parte da tranzicao de animacao de uma pra outra*/
+
+}
+.botao:hover{/*passar o mause emcima do botao ele mudar de cor*/
+background-color: white;/*cor ao botao quando passar por cima*/
+color: black;
+
+}
+.botao i{
+    margin-right: 8px;/*afastar o icone do nome*/
+
+}
+.container{
+    margin-left: 5px;/*vai mover o nome para direita */
+
+}
+.filme-principal .container{
+    width: 60%; /*quando a largura chega em 60% ele joga tudo pra baixo alinha tipo fica um botao embaixo do outro */
+
+}
+.box-filme{
+height: 100%;/*altura natura*/
+width: 100%;/*largura*/
+display: block;/**/
+
+}
+.carrosel-filmes{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

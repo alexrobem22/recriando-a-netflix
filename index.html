@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!---->
+<!--o HEAD e a cabeça -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css"><!--meu style css atalho se eu aperta CTRL E ESPAÇO abre um local pra navegar entre as pasta-->
+   
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+   
+   
+   
+    <title>NETFLIX AMIGOS</title>
+</head>
+<!--BODY e o corpo-->
+<body>
+
+  <header><!--nosso cabeçalho aqui vai ser o menu de navegação-->
+<div class="container">
+<h2 class="logo">NETFLIX</h2>
+<nav><!--tag semantica usada para criar menu de navegação-->
+<a href="#">Inicio</a><!--clonar linha alt + shift seta pra baixo-->
+<a href="#">Séries</a>
+<a href="#">Filmes</a>
+<a href="#">Documentarios</a>
+
+</nav>
+</div>
+  </header>
+    
+<main><!--e uma div semantica-->
+   <div class="filme-principal">
+      <div class="container"><!--essa classe container e para a div segurar todas as informaçoes dentro dela ela vai ser espremida mas vai ter os conteudo firme e quando abri os conteudo ainda vai tar la , e se for mudar algo muda tudo de uma vez-->
+  <h3 class="titulo">HOUSE OF CARDS</h3>
+<p class="descricao">Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro.</p>
+  <div class="botoes">
+    <button role="button"  class="botao"><!--para algum sistema precisa declara a funcao do bota especificar o que ele faz usamos role="button"-->
+    <i class="fas fa-play"></i><!--cria um icone de play no começo do nome-->
+      ASSISTIR AGORA
+    </button>
+   <button role="button" class="botao">
+     <i class="fas fa-info-circle"></i>
+    MAIS INFORMACOES
+    </button>
+  </div>
+    </div>
+  </div>
+</main>
+
+<div class="carrosel-filmes">
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+      <img  class="box-filme" src="img/mini1.jpg" alt="imagem1">
+    </div>
+    <div class="item">
+      <img  class="box-filme" src="img/mini2.jpg" alt="imagem1">
+    </div>
+    <div class="item">
+      <img  class="box-filme" src="img/mini3.jpg" alt="imagem1">
+    </div>
+    <div class="item">
+      <img  class="box-filme" src="img/mini4.jpg" alt="imagem1">
+    </div>
+    <div class="item">
+      <img  class="box-filme" src="img/mini5.jpg" alt="imagem1">
+    </div>
+    <div class="item">
+      <img  class="box-filme" src="img/mini6.jpg" alt="imagem1">
+    </div>
+    <div class="item">
+      <img  class="box-filme" src="img/mini7.jpg" alt="imagem1">
+    </div>
+    <div class="item">
+      <img  class="box-filme" src="img/mini8.jpg" alt="imagem1">
+    </div>
+    <div class="item">
+      <img  class="box-filme" src="img/mini9.jpg" alt="imagem1">
+    </div>
+    <div class="item">
+      <img  class="box-filme" src="img/mini10.jpg" alt="imagem1">
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<!--e bom sempre bota o java script no final da pagina pq se bota no começo pode da erro ou bug o sati -->
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script><!--esse link fica na nuve com ele eu consigo bota os incones no sati-->
+<script src="js/owl/jquery.min.js"></script>
+<script src="js/owl/owl.carousel.min.js"></script>
+<script src="js/owl/setup.js"></script>
+</body>
+</html>
